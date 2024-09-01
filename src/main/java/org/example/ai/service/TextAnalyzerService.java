@@ -5,5 +5,6 @@ import org.example.ai.model.*;
 import java.util.List;
 
 public interface TextAnalyzerService {
-    List<Text> getTexts(String id);
+    List<TextAnalysis> analyze(String text);
+    List<TextClassification> classify(String text);
 }
