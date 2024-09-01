@@ -7,4 +7,5 @@ import java.util.List;
 public interface TextAnalyzerService {
     List<TextAnalysis> analyze(String text);
     List<TextClassification> classify(String text);
+
 }
