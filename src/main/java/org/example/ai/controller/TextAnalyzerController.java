@@ -25,8 +25,9 @@ public class TextAnalyzerController {
     }
 
     @PostMapping("ask")
-    public ResponseEntity<String> ask(@RequestBody String question) {
-        return ResponseEntity.ok(geminiService.ask(question));
+    public ResponseEntity<String> ask(@RequestBody String question,
+                                      @RequestParam(name = "model")  GeminiModel model) {
+        return ResponseEntity.ok(geminiService.ask(question, model));
     }
 
     @PostMapping("/text/classify")

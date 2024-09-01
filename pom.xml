@@ -30,7 +30,7 @@
             <dependency>
                 <groupId>com.google.cloud</groupId>
                 <artifactId>libraries-bom</artifactId>
-                <version>26.44.0</version>
+                <version>26.45.0</version>
                 <type>pom</type>
                 <scope>import</scope>
             </dependency>
@@ -38,6 +38,10 @@
     </dependencyManagement>
 
     <dependencies>
+        <dependency>
+            <groupId>com.google.cloud</groupId>
+            <artifactId>google-cloud-vertexai</artifactId>
+        </dependency>
         <dependency>
             <groupId>com.google.cloud</groupId>
             <artifactId>google-cloud-language</artifactId>
@@ -178,6 +182,10 @@
     </build>
     <repositories>
         <repository>
+            <id>google</id>
+            <url>https://mvnrepository.com/artifact/com.google.cloud</url>
+        </repository>
+        <repository>
             <id>central</id>
             <url>https://repo.maven.apache.org/maven2</url>
         </repository>
@@ -191,6 +199,9 @@
             <name>Spring Milestone Repository</name>
             <url>http://repo.spring.io/milestone</url>
         </repository>
+
+        <!-- https://mvnrepository.com/artifact/com.google.ai.client.generativeai/generativeai -->
+
     </repositories>
     <pluginRepositories>
         <pluginRepository>
