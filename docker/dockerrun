@@ -1,0 +1,5 @@
+
+#docker run -p 80:8080 -it aitextanalyzer-services
+docker run -p 80:8080 -d -t aitextanalyzer-services
+
+

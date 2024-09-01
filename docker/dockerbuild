@@ -1,0 +1,7 @@
+mkdir -p dist
+
+cp ../target/AiTextAnalyzer-1.0-SNAPSHOT.jar dist/AiTextAnalyzer-1.0-SNAPSHOT.jar
+
+docker build -t aitextanalyzer-services .
+
+rm -fr dist
